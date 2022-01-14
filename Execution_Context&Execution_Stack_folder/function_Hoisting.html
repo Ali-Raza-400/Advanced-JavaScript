@@ -1,0 +1,36 @@
+<script>
+
+function multiplication(a,b){
+    return a*b;
+}
+console.log(multiplication(5,10));
+
+// above function is called at the end of the function ... as we do but when we call variables or function on 
+// top that is called function Hoisting 
+ 
+console.log(Division(50,10));
+function Division(a,b){
+    return a/b;
+
+}
+// function expresstion not work as Hoistig ....
+// i can nt call function expression before defining the function 
+// console.log(sum(50,10));// incorrect send error function nit defined (function_Hoisting.html:18 Uncaught ReferenceError: Cannot access 'sum' before initialization
+    // at function_Hoisting.html:18:13)
+
+let sum= function(a,b){
+    return a+b;
+}
+console.log(sum(50,10)); // correct
+
+// another eception occure in Fate arrow function Hoisting not work 
+// substract(10,5);//false
+const substract=(a,b)=>{
+    return console.log(a-b);
+
+}
+substract(10,5);//correct
+
+//this mean modern function ES7 hoisting not works in function 
+ 
+</script>

@@ -1,0 +1,22 @@
+Execustion Object Phases has Two Phases
+1) Create Phase:
+Variable are Created... then Scope of Variable is define and at last ... this . var  for what that variable is used
+
+2) Execution Phase: 
+this run the current code which is execution ... for example we call an function the execution phase move to the 
+respective section or phase
+
+
+Hoisting in javascript:
+when we define function and variable they comes under the global default context at that time 
+these function and variables are known as hositing or avaliable inside the context Phase
+
+
+Hositing realated to the Declaration in javascript like function and variables
+
+
+Definition by W3 School 
+JavaScript Declarations are Hoisted
+In JavaScript, a variable can be declared after it has been used.
+
+In other words; a variable can be used before it has been declared.
