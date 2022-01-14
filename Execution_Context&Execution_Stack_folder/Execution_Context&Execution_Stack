@@ -1,0 +1,33 @@
+When We Write Code in JavaScript V8 Engin Create a  Global Execution Context Default 
+These Global Execution Context default contain thoes varibles which are outside the function body 
+or those value which are not called inside the other fuction 
+
+Execution Context:
+When Function in called the variables run under Execution Context not inside the Default Context which is Globally 
+Created by V8 Engin Itself.
+Example: When We run in console  Var a='Ali';  this will store inside Window (default Exe Context) 
+
+Execution Stack:
+Stack like in DSA ... this follow the LIFO concept 
+
+main Example:
+
+Nested Function:
+
+function a={
+    console.log('my name is John1');
+    b();
+}
+function b={
+     console.log('my name is John2');
+}
+
+a();      
+--------------
+when a() is not called on line 25 function a() and function b() both are in  default global Context
+as soon as a() called  both function comes under Execution Context ...
+Main process : function a first comes to stact then b comes to stack ... when b is completes till line 21 to 23 
+b() is pulled out from stack then we have a() in stack the at end function a() also pop out from stack
+Result : All function Comes back to Default global Context
+
+
