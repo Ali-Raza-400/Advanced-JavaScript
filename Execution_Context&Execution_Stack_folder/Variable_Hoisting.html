@@ -1,0 +1,21 @@
+// when we define var at top it work as shown
+
+<script>
+    a=10;
+    console.log(a)// output will be 10
+
+    // But when i change the lines like
+// ----------------
+    console.log(b) // output undefine
+    b=10; 
+
+    // ------------------- Explanation 
+    consol.log(c);
+    c=20; // hositing say c will move to the top so c=undefine move to top and show the result as indefine
+
+    // ---------------------
+    //d= undefined
+    console.log(d);
+    var d; // ...this d without its value shifted to the top  so our output be undefined
+    d=20;
+</script>
