@@ -1,0 +1,25 @@
+<script>
+
+var globalV="added";
+function a(){
+    var fa=" 2nd function 0/p1";
+    console.log(fa);
+    debugger;         // debugger tell at which point we are (inspect  source  Ctrl+ Enter (callback ) tell each call stack concept )
+    b();
+    console.log("let's see when i will be on console");
+}
+function b(){
+    debugger;
+    console.log('2nd function 0/p2');
+    c();
+
+}
+function c(){
+    debugger;
+    console.log('3rd function 0/p3')
+}
+
+a();
+
+
+</script>
