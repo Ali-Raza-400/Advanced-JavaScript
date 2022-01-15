@@ -1,0 +1,14 @@
+<script>
+  console.log(this); // this is global vaiable ... output Window (which store globally all the values)
+
+  // this is a libabary called the window
+  const demo = {
+    name: 'Ali',
+    Age: 23,
+    dicipline: function () {
+      console.log('web Development and App Development');
+      console.log(this); // inside the function Window is not shown ... this mean it will print window when it is outside the function
+    },
+  };
+  demo.dicipline();
+</script>
