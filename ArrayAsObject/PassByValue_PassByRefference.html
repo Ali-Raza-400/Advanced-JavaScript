@@ -1,0 +1,25 @@
+<script>
+  // Pass by Value when we say a=b after changing value of b both are a,b are independent
+
+  var a = 10;
+  var b = a;
+  console.log(a);
+  console.log(b);
+  //   important Point: Pass By value Comes Under the Premitive dataType
+</script>
+
+<script>
+  // Pass by reference include non Premitive Datatype
+
+  //   refernce mean both object have same refence or index value so if we say a=b the on updating a or b  value of a and b will be updated.
+  var obj1 = {
+    name: 'Hassan Raza',
+    Age: 11,
+  };
+  var obj2 = obj1;
+  (obj2.name = 'hassan'), console.log(obj1);
+  console.log(obj2);
+
+  // this will change the value of obj1 and obj2 at same time when obj2 is increment
+  // this is known as pass by refence ...both have sme reference
+</script>
