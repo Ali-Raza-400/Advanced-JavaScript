@@ -1,0 +1,19 @@
+When we use strict mode above or bellow the function or code... whenever we declare a variable without its type 
+i.e instead of Var a=10 ... if we type a=10 it throw an error 
+
+
+<Script>
+function portfolio(){
+    a="my name is Ali";
+    console.log(a);
+}
+portfolio()
+
+// above code will snd error if strict mood is on  if we define variable without its type like var,let or const as bellow 
+"use strict"
+function portfolio(){
+    a="my name is Ali";
+    console.log(a);
+}
+portfolio()
+</Script>
