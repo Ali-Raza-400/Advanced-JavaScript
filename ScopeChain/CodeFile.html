@@ -1,0 +1,48 @@
+<script>
+var Name="Ali";
+
+function parentFun(){
+    var age=23;
+
+    ChildFun();
+    function ChildFun(){
+     console.log("My name is"+Name+"My Age is"+age)
+    }
+}
+parentFun();
+// above function tell that child function can access the parentsfun var and global var as well
+
+// in following function subject is not defined as parent function have no access to the child function 1variable 
+var Name="Ali";
+
+function parentFun(){
+    var age=23;
+    console.log("My name is"+Name+"My Age is"+age+" I like "+subject)
+    ChildFun();
+    function ChildFun(){
+        subject="Maths"
+    //  console.log("My name is"+Name+"My Age is"+age)
+    }
+}
+parentFun();
+// similary third function outside the parent and child function cannot access the child function's  variables
+// as explain below 
+
+var Name="Ali";
+
+function parentFun(){
+    var age=23;
+
+    ChildFun();
+    function ChildFun(){
+     console.log("My name is"+Name+"My Age is"+age)
+    }
+}
+function neighbour(){
+    console.log("My name is"+Name+"My Age is"+age);
+}
+
+neighbour(); // this will throw error because the neighbour function calling the Name and age variables inside scope of other function
+
+
+</script>

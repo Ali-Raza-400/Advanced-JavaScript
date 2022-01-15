@@ -1,0 +1,5 @@
+Scope Chain : it is define to check the value of the variable 
+
+Lexical Scoping: When we define nested function ... The parent function  variables are globally used by 
+child functions . But the variable define in child function are local Scope not accessable to parent
+
