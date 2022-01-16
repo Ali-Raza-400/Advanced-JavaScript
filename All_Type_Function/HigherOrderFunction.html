@@ -1,0 +1,23 @@
+<script>
+    function Selection(name){
+        if(name === "Ali")
+        {
+            return function(topic){
+                console.log(`your name ${name} . please explain us ${topic}`)
+            }
+        }
+        if(name === "Hassan")
+        {
+            return function(topic){
+                console.log(`your grade ${name} . please explain us ${topic}`)
+            }
+        }else{
+            console.log('Welcome ')
+        }
+    }
+    // one way to call inner function
+    Selection("Ali")("Ui");
+    //sceonday way to call inner function
+   const a= Selection("Hassan")
+   a('Arabic');
+</script>

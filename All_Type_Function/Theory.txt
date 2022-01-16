@@ -6,3 +6,10 @@ When we declared a function equal to variable then that programing language is
 
 
 // the function that we pass as an argument to another function is called clalback function
+
+Anonymous Function:
+"A function which have no name "
+
+
+// Higher Order function 
+A function that return another function in its return point
