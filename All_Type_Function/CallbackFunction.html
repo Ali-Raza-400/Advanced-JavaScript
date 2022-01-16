@@ -1,0 +1,13 @@
+<!-- the function that we pass as an argument to another function is called clalback  -->
+
+<script>
+   
+  const myName = () => {
+    return 'Hello';
+  };
+
+  const greeting = (sayHi, name) => {
+    console.log(sayHi() + name);
+  };
+  greeting(myName, 'Hassan Raza');
+</script>

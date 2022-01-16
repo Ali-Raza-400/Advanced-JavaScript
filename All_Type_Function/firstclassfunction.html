@@ -1,0 +1,29 @@
+<script>
+  const Ali = function portfolio() {
+    console.log('My name is ALi ');
+  };
+  Ali();
+  // abouve code show that we can assign a function to the variable
+
+  // similary in js we can assign the object to a variable like
+
+  const student1 = {
+    name: 'Ali',
+    age: function () {
+      console.log("Ali's age is 23");
+    },
+  };
+  student1.age();
+
+  // pass function as argument
+  // when we pass parement value to function ... we can pass it function as well as shown
+  // the function that we pass as an argument to another function is called clalback function
+  const myName = () => {
+    return 'Hello';
+  };
+
+  const greeting = (sayHi, name) => {
+    console.log(sayHi() + name);
+  };
+  greeting(myName, 'Hassan Raza');
+</script>
