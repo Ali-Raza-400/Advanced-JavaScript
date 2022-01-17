@@ -13,3 +13,6 @@ Anonymous Function:
 
 // Higher Order function 
 A function that return another function in its return point
+
+// IIEF Stand for Immediate innvoke function it consist of Anonomus function(which have no name) wrap inside the 
+round braces is invoke imediately when we use ();

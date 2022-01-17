@@ -1,0 +1,37 @@
+<script>
+    {/* Closure : it is an action that is inner function can have access to ther outer function variables as well as all the global variables */}
+
+// function sum(a){
+//    b=10;
+//    function sub(){
+//        substraction=a-b;
+//        console.log(substraction)
+//    }
+//    sub();
+// }
+// console.log(sum(2));
+
+function Ali(){
+    return function Hassan(){
+        console.log('function are brother');
+    }
+    Hassan() 
+}
+Ali()();
+
+
+</script>
+<script>
+    function a() {
+      return function b() {
+        console.log('i am doing Bachelor of Science in Computer Science');
+      };
+  
+    }
+  //    step1:
+  //   c=a();
+  //   c()
+  
+  // Step2: 
+  a()()
+  </script>

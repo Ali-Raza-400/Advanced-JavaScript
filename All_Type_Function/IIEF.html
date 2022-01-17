@@ -1,0 +1,17 @@
+<script>
+  // IIEF Stand for Immediate innvoke function it consist of Anonomus function(which have no name) wrap inside the
+  // round braces is invoke imediately when we use ();
+
+  (function () {
+    return console.log('My name is Ali');
+  })();
+
+  //   also we can use variable inside the function but scope of that function is global
+
+  (function () {
+    var name1 = 'Hassan';
+    return console.log(`My name is ${name1}`); // output will be my name is Hassan
+  })();
+  //but outside the function var name has no access
+  console.log(name1);
+</script>
