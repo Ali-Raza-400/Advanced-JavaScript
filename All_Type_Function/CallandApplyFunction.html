@@ -19,5 +19,11 @@
 
 
 // on the other hand Apply take the argumenet in the Array
-obj1.discipline.apply(obj2,[2,3])
+obj1.discipline.apply(obj2,[2,3]);
+
+// bind function: is me jaab function me object ku access karte ha tu multiple time access karne ke lye hum iss kesi duscre varible ke equal likh kr bind kr dyte hai then simple var and parenthise likh ke hum isse acces kr sqte hai 
+//  hint : jis se link karna hau is function ka name paramenter me aye ga 
+
+const obj4=obj1.discipline.bind(obj1);
+obj4();
 </script>

@@ -1,0 +1,24 @@
+<script>
+
+    const student =[ "Ali","Hassan","Hammad","Faisal"]
+
+    console.log(student[0]) // Which is not efficient for geeting a single at one tym only intead of all array
+
+        for(var x=0;x <student.length;x++){
+             console.log(student[x]);
+        }
+ // now using foreach 
+//  just we are using object( which is student) . loop name then call backfuntion then any alphabet which is called starting index inside that call back function then console that
+
+ student.forEach(function(y,ind){
+       console.log(y,ind)
+ })
+
+ // printing array to add 100 to each element and display the updated result
+  arr1=[10,20,30];
+  arr1.forEach(function(c){
+    console.log(c+100)
+  })
+
+
+</script>
