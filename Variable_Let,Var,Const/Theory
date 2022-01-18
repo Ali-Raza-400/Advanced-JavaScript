@@ -1,0 +1,5 @@
+Const: value is constant whoes value cannot be chage .
+  let and var : value cann be change
+  var declasred functional scoped
+  where let and const are block scoped
+  

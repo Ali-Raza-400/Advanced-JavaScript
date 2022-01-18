@@ -1,0 +1,28 @@
+<script>
+  let name = 'Ali';
+  if (true) {
+    let name = 'Hassan';
+    console.log(name); //Hassan
+  }
+  console.log(name); // A;i
+  //let has block scope mean let value is name =hasssan wrap inside the if block it value is not hassan outside block is nothing
+</script>
+
+<script>
+  //in case of var
+  var name = 'Ali';
+  if (true) {
+    var name = 'Hassan';
+    console.log(name); //Hassan
+  }
+  console.log(name);
+  //Hassan.. this mean var changes its value whenever we declare var inside the block of function  in end
+</script>
+
+<script>
+  var a = 'Ali';
+  if (true) {
+    a = 10;
+  }
+  console.log(a); //10
+</script>

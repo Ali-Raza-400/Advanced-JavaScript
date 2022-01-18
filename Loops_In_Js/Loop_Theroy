@@ -9,3 +9,8 @@ sytax: for(anyvar of arrname){
 }
 
 //where anyvar runtime varibale
+
+
+//for of loop : use iterable 
+
+for in loop contain the enumerable
