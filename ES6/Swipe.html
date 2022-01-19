@@ -1,0 +1,16 @@
+<script>
+  a = 10;
+  b = 20;
+  // a=b;
+  // console.log(a); 20
+  // console.log(b)20
+
+  let temp = a; // value of a is copied in temp so temp=10
+  a = b; // value of b and a is know same which is 20
+  b = temp; // value of b which was 20 replaced to temp which is 10
+
+  console.log(`value of a is ${a} and value of b is ${b}`);
+
+//   Alternate Way
+[a,b]=[b,a] //destructering
+</script>
