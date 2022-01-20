@@ -1,0 +1,27 @@
+<script>
+  //   Synchronous Function
+  function b() {
+    console.log('I am doing hardwork');
+  }
+  function a() {
+    console.log('My name is Ali');
+    b();
+    console.log('I am a gammer');
+  }
+  a();
+</script>
+
+<script>
+  // ASynchronous Function
+  const d = () => {
+    setTimeout(() => {
+      console.log('I am a gammer');
+    }, 3000);
+  };
+  function c() {
+    console.log('My name is Ali');
+    d(); // we are not dependent on d() there is setTimeout so our code run after the 3s func d will run
+    console.log('I am a gammer');
+  }
+  c();
+</script>

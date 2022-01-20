@@ -1,5 +1,37 @@
 Template String or template literal:
                     in es6 when we want to print string and number together we use back ticks for Example:
-                     console.log(`my name is ${name}`) // name="Ali"
-        but in es5 we join or concatenate it using + operatofa-rotate-180
+                    console.log(`my name is ${name}`) // name="Ali"
+                    but in es5 we join or concatenate it using + operatofa-rotate-180
 
+Default paremeter: When we pass value of paramerter on the top of the function  like  function (a,b=10) then b is default paramerter
+
+
+What is Difference between function paramerter and Argument?
+Function Paramerter:
+                    " When we define function the value or varible pass on defining the function i.e 
+                    funtion std(a,b) here a,b are the argument"
+Function Argument: 
+                    "When we give value on calling the function "
+
+
+Rest Parameter(...)
+                   Rest opertator used in when parameter of function are less than argument then Rest operation contain the value of all  for example: function name(a,b) if on calling function name("a1","b2","c3") this is a problem so we use name(a,...b) now b parameter have to value b2 and c3
+
+Maths object in es6:
+                    two method introduced
+                    1) Sign Method: which is used to know nature of value ( +ve or -ve value) 1 and -1 respectiverly
+                    2)trunck: return the interger value of varicale i.e a=5.98  the output be  a=5
+
+Promises: 
+it has 3 stages
+                Senerio: You will be their on 9am
+                    1) pending  : waiting or u can say its not 9 am it maybe 7 or 8 am waiting stages
+                    2) resolve: u r there 
+                    3)reject: u r buzy u r at home or somewhere else
+Synchronous vs Asynchronous Programming:
+                Synchronous meaning all the work step by step if some function is call trnsfer move to that point 
+                first that calling function executes then remaing code load.
+                Asynchronous programming mean in js if some calling function called we can paused its execustion 
+                timeout for some time then after the remaing code execute the calling function will be printed
+
+         
