@@ -1,0 +1,20 @@
+<script>
+  const getRollNo = () => {
+    setTimeout(() => {
+      console.log('Api gettong the rollno ');
+      let roll_no = [1, 2, 3, 4, 5];
+      console.log(roll_no);
+      setTimeout((rollno)=>{
+          const biodata={
+              name:'Ali',
+              age:23
+          }
+          console.log(`My Roll no is ${rollno}`);
+          setTimeout((www)=>{
+          console.log(`My age is ${www} `)
+          },2000,biodata.age)
+      },2000,roll_no[1])
+    }, 2000);
+  };
+  getRollNo();
+</script>
