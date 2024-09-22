@@ -1,29 +1,25 @@
 <script>
-    // When we call a object's method to a another object 
+  // When we call a object's method to a another object
 
-    const obj1={
-     name:"Ali",
-     age:10,
-     discipline:function(val,val2){
-         console.log(`i am developer my name is ${this.name} and  age is ${this.age} ${val}${val2}`)
-     }
+  // what is differ between call and bind
+  const person = {
+    fullName: function (city, country) {
+      return this.firstName + " " + this.lastName + "," + city + "," + country;
+    },
+  };
 
-    }
-    const obj2={
-        name:"Hassan",
-        age:200,
+  const person1 = {
+    firstName: "John",
+    lastName: "Doe",
+  };
 
-    }
-    obj1.discipline.call(obj2,2,3)
-// val is argumentpass to the obj1 seprately wit help of cal function 
+  console.log(person.fullName.call(person1, "Oslo", "Norway"));
+  console.log(person.fullName.apply(person1, ["Oslo", "Norway"]));
 
+  // bind function: is me jaab function me object ku access karte ha tu multiple time access karne ke lye
+  //hum iss kesi duscre varible ke equal likh kr bind kr dyte hai then simple var and parenthise likh ke hum isse acces kr sqte hai
+  //  hint : jis se link karna hau is function ka name paramenter me aye ga
 
-// on the other hand Apply take the argumenet in the Array
-obj1.discipline.apply(obj2,[2,3]);
-
-// bind function: is me jaab function me object ku access karte ha tu multiple time access karne ke lye hum iss kesi duscre varible ke equal likh kr bind kr dyte hai then simple var and parenthise likh ke hum isse acces kr sqte hai 
-//  hint : jis se link karna hau is function ka name paramenter me aye ga 
-
-const obj4=obj1.discipline.bind(obj1);
-obj4();
+  //   const obj4 = obj1.discipline.bind(obj1,1);
+  //   obj4();
 </script>
